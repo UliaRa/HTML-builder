@@ -17,7 +17,7 @@ function copyDir() {
             files.forEach(file =>
                 fs.copyFile(path.join(pathToFirstFolder, path.basename(file)), path.join(pathToNewFolder, path.basename(file)), (err) => {
                   if (err) throw err;
-                }));            
+                }));
         }
     });
 }
